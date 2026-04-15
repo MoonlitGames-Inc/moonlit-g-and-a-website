@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlit Games - PC & VR Game Development Studio</title>
+    <meta name="description"
+        content="Moonlit Games is a PC and VR game development studio based in Richmond, VA. Creators of Chill Gorilla for Meta Quest.">
+    <link rel="icon" type="image/png" href="Moonlit Games logo design.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="Moonlit Games logo design.png" alt="Moonlit Games" class="logo-img">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#games" class="nav-link">Games</a>
+                <a href="#apis" class="nav-link">APIs</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="assets/hero-bg.png" alt="" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">PC & VR Game Development</div>
+            <h1 class="hero-title">
+                Building Immersive
+                <span class="gradient-text">Worlds</span>
+                You Can Step Into
+            </h1>
+            <p class="hero-subtitle">
+                We're a PC and VR game development studio crafting unforgettable experiences.
+                From heart-pounding horror to creative adventures -- we bring your screen to life.
+            </p>
+            <div class="hero-actions">
+                <a href="#games" class="btn btn-primary">
+                    <span>Our Games</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-outline">Meet the Team</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-suffix"></span>
+                    <span class="stat-label">Team Members</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="2">0</span><span class="stat-suffix"></span>
+                    <span class="stat-label">Platforms</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="1">0</span><span class="stat-suffix"></span>
+                    <span class="stat-label">Game in Development</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="section games-section" id="games">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Games</span>
+                <h2 class="section-title">Chill Gorilla</h2>
+                <p class="section-subtitle">A VR horror experience built for Meta Quest. Explore dark environments,
+                    solve puzzles, and survive the unknown. Coming Soon.</p>
+            </div>
+
+            <div class="game-showcase">
+                <div class="game-visual">
+                    <div class="game-card-glow"></div>
+                    <img src="assets/New Pr12313oject.png" alt="Chill Gorilla - VR Horror Game" class="game-img">
+                    <div class="game-badge">Coming Soon</div>
+                </div>
+                <div class="game-details">
+                    <div class="platform-tags">
+                        <span class="platform-tag">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                            Meta Quest
+                        </span>
+                        <span class="platform-tag">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2z" />
+                                <path d="M12 8v4l3 3" />
+                            </svg>
+                            VR
+                        </span>
+                        <span class="platform-tag horror-tag">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+                            </svg>
+                            Horror
+                        </span>
+                    </div>
+                    <div class="feature-list">
+                        <div class="feature-item" data-aos>
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Full VR Immersion</h3>
+                                <p>Built from the ground up for Meta Quest, putting you inside the horror with full
+                                    360-degree awareness.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos>
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" />
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Dark Atmospheric Environments</h3>
+                                <p>Explore dimly lit corridors, eerie basements, and mysterious control rooms that keep
+                                    you on edge.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos>
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Interactive Puzzles</h3>
+                                <p>Interact with the environment -- flip switches, read messages, and uncover secrets
+                                    hidden in the dark.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos>
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Survive the Unknown</h3>
+                                <p>Every shadow hides something. Stay alert, stay alive. Can you make it through the
+                                    night?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Status -->
+            <div class="roadmap">
+                <h3 class="roadmap-title">Development Progress</h3>
+                <div class="roadmap-track">
+                    <div class="roadmap-item completed">
+                        <div class="roadmap-marker"></div>
+                        <div class="roadmap-card">
+                            <span class="roadmap-quarter">Phase 1</span>
+                            <h4>Concept & Prototyping</h4>
+                            <ul>
+                                <li>Core concept defined</li>
+                                <li>Initial level design</li>
+                                <li>VR mechanics testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="roadmap-item completed">
+                        <div class="roadmap-marker"></div>
+                        <div class="roadmap-card">
+                            <span class="roadmap-quarter">Phase 2</span>
+                            <h4>Development</h4>
+                            <ul>
+                                <li>Environment building</li>
+                                <li>Sound design & audio</li>
+                                <li>Interactive systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="roadmap-item active">
+                        <div class="roadmap-marker"></div>
+                        <div class="roadmap-card">
+                            <span class="roadmap-quarter">Phase 3</span>
+                            <h4>Beta Testing</h4>
+                            <ul>
+                                <li>Internal playtesting</li>
+                                <li>Bug fixes & polish</li>
+                                <li>Performance tuning</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-marker"></div>
+                        <div class="roadmap-card">
+                            <span class="roadmap-quarter">Phase 4</span>
+                            <h4>Launch</h4>
+                            <ul>
+                                <li>Meta Quest release</li>
+                                <li>Community feedback</li>
+                                <li>Post-launch updates</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="section values-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Vision</span>
+                <h2 class="section-title">Why Moonlit Games</h2>
+                <p class="section-subtitle">We build games that push boundaries -- blending cutting-edge technology with
+                    creative storytelling to deliver experiences you won't forget.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card" data-aos>
+                    <div class="value-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                    </div>
+                    <h3>PC & VR Native</h3>
+                    <p>We develop for both PC and VR platforms, ensuring every game feels natural on the hardware it's
+                        built for.</p>
+                </div>
+                <div class="value-card" data-aos>
+                    <div class="value-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Immersive Experiences</h3>
+                    <p>From atmosphere to audio, every detail is crafted to pull you into the world and keep you
+                        engaged.</p>
+                </div>
+                <div class="value-card" data-aos>
+                    <div class="value-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3>Indie Passion</h3>
+                    <p>A small team with big ambitions. We pour our creativity and passion into every project we build.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moonlit APIs Section -->
+    <section class="section apis-section" id="apis">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Developer Tools</span>
+                <h2 class="section-title">Moonlit APIs</h2>
+                <p class="section-subtitle">Powerful APIs for developers. Build integrations, access game data, and
+                    extend the Moonlit ecosystem.</p>
+            </div>
+
+            <div class="apis-showcase">
+                <div class="apis-logo-wrap" data-aos>
+                    <div class="apis-logo">
+                        <img src="assets/moonlit-apis-logo.png" alt="Moonlit APIs" class="apis-logo-img">
+                    </div>
+                    <div class="apis-coming-soon">
+                        <span class="coming-soon-badge">Coming Soon</span>
+                        <p>The Moonlit APIs portal is currently in development. Stay tuned for developer access.</p>
+                        <a href="mapi/index.html" class="btn btn-primary apis-btn">
+                            <span>APIs Portal</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="apis-features">
+                    <div class="api-card" data-aos>
+                        <div class="api-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <h3>REST API</h3>
+                        <p>Access game data, player stats, and more through our clean, well-documented RESTful
+                            endpoints.</p>
+                        <span class="api-status">In Development</span>
+                    </div>
+                    <div class="api-card" data-aos>
+                        <div class="api-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                        </div>
+                        <h3>WebSocket</h3>
+                        <p>Real-time event streams for live game data, notifications, and interactive integrations.</p>
+                        <span class="api-status">Planned</span>
+                    </div>
+                    <div class="api-card" data-aos>
+                        <div class="api-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3>SDK</h3>
+                        <p>Official libraries and SDKs to integrate Moonlit services into your own projects with ease.
+                        </p>
+                        <span class="api-status">Planned</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">The Devs Behind the Games</h2>
+                <p class="section-subtitle">A tight-knit team of creators building the next generation of PC and VR
+                    experiences from Richmond, Virginia.</p>
+            </div>
+            <div class="team-grid team-grid-3">
+                <div class="team-card" data-aos>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder founder-badge">I5</div>
+                    </div>
+                    <h4>Indigo577</h4>
+                    <span class="team-name-real">Liam Milby</span>
+                    <span class="team-role">Founder</span>
+                    <p>The driving force behind Moonlit Games. Leads development, vision, and direction for all studio
+                        projects.</p>
+                </div>
+                <div class="team-card" data-aos>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder cofounder-badge">10</div>
+                    </div>
+                    <h4>10StarGeneral</h4>
+                    <span class="team-role">Co-Founder</span>
+                    <p>Co-founded Moonlit Games and helps steer the studio's creative and strategic direction alongside
+                        Indigo577.</p>
+                </div>
+                <div class="team-card" data-aos>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder artist-badge">S</div>
+                    </div>
+                    <h4>Star</h4>
+                    <span class="team-role">Sound, Visual & Model Artist</span>
+                    <p>Responsible for bringing Moonlit's worlds to life through sound design, visual effects, and 3D
+                        modeling.</p>
+                </div>
+            </div>
+            <div class="berlin-callout">
+                <div class="berlin-content">
+                    <h3>Based in Richmond, VA</h3>
+                    <p>Operating out of Richmond, Virginia -- a city rich with history, creativity, and a thriving indie
+                        dev community.
+                        The perfect launchpad for building the games we've always wanted to play.</p>
+                </div>
+                <div class="berlin-decoration">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5"
+                        opacity="0.3">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Want to collaborate, join our team, or just say hello? We'd love to hear
+                    from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:info@moonlitgames.io" class="contact-link">info@moonlitgames.io</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Location</h3>
+                    <p class="contact-detail">Richmond, Virginia<br>United States</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </div>
+                    <h3>Community</h3>
+                    <a href="https://discord.gg/H8NHZ4sEAa" class="contact-link" target="_blank" rel="noopener">Join our
+                        Discord</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://discord.gg/H8NHZ4sEAa" target="_blank" rel="noopener" class="social-link"
+                    aria-label="Discord">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCFFQdSdwqhI6gPqgO8zIXZg/featured" target="_blank"
+                    rel="noopener" class="social-link" aria-label="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/Moonlit_Games" target="_blank" rel="noopener" class="social-link"
+                    aria-label="X / Twitter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="Moonlit Games logo design.png" alt="Moonlit Games" class="footer-logo">
+                    <p>PC & VR game development studio based in Richmond, Virginia.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Menu</h4>
+                    <a href="#home">Home</a>
+                    <a href="#games">Games</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Resources</h4>
+                    <a href="https://discord.gg/H8NHZ4sEAa" target="_blank" rel="noopener">Discord</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Moonlit Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

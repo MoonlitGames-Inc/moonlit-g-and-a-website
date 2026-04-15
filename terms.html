@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Moonlit Games</title>
+    <meta name="description" content="Terms and Conditions for Moonlit Games and Moonlit APIs.">
+    <link rel="icon" type="image/png" href="Moonlit Games logo design.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .legal-page {
+            padding: 140px 0 80px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .legal-header {
+            margin-bottom: 48px;
+        }
+
+        .legal-header h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .legal-header .legal-updated {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .legal-content {
+            max-width: 800px;
+        }
+
+        .legal-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 36px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text-primary);
+        }
+
+        .legal-content h3 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 24px 0 8px;
+            color: var(--color-accent-1);
+        }
+
+        .legal-content p {
+            font-size: 0.92rem;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .legal-content ul {
+            margin: 8px 0 16px 20px;
+        }
+
+        .legal-content li {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            margin-bottom: 6px;
+            list-style: disc;
+        }
+
+        .legal-content a {
+            color: var(--color-accent-1);
+            text-decoration: underline;
+        }
+
+        .legal-content a:hover {
+            color: var(--color-accent-2);
+        }
+
+        .legal-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 24px;
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            transition: var(--transition-fast);
+        }
+
+        .legal-back:hover {
+            color: var(--color-accent-1);
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="Moonlit Games logo design.png" alt="Moonlit Games" class="logo-img">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#games" class="nav-link">Games</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="legal-page">
+        <div class="container">
+            <a href="index.html" class="legal-back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Back to Home
+            </a>
+            <div class="legal-header">
+                <h1>Terms & Conditions</h1>
+                <p class="legal-updated">Last updated: April 14, 2025</p>
+            </div>
+            <div class="legal-content">
+
+                <h2>1. Agreement to Terms</h2>
+                <p>By accessing or using the Moonlit Games website, any games developed by Moonlit Games (including but
+                    not limited to "Chill Gorilla"), or any services provided through Moonlit APIs (collectively, the
+                    "Services"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree with
+                    these Terms, you may not access or use the Services.</p>
+                <p>Moonlit Games is a PC and VR game development studio based in Richmond, Virginia, United States.</p>
+
+                <h2>2. Definitions</h2>
+                <ul>
+                    <li><strong>"Moonlit Games"</strong> (also referred to as "we," "us," or "our") refers to the game
+                        development studio and its affiliated services.</li>
+                    <li><strong>"User"</strong> (also referred to as "you" or "your") refers to any individual who
+                        accesses or uses the Services.</li>
+                    <li><strong>"Services"</strong> refers to all products, games, websites, APIs, and related services
+                        provided by Moonlit Games.</li>
+                    <li><strong>"Moonlit APIs"</strong> refers to the developer tools and application programming
+                        interfaces provided by Moonlit Games.</li>
+                    <li><strong>"Content"</strong> refers to any text, images, audio, video, code, or other materials
+                        made available through the Services.</li>
+                </ul>
+
+                <h2>3. Use of Services</h2>
+                <h3>3.1 Eligibility</h3>
+                <p>You must be at least 13 years of age to use the Services. If you are under 18, you must have the
+                    consent of a parent or legal guardian to use the Services.</p>
+
+                <h3>3.2 Acceptable Use</h3>
+                <p>You agree to use the Services only for lawful purposes and in accordance with these Terms. You agree
+                    NOT to:</p>
+                <ul>
+                    <li>Use the Services in any way that violates applicable federal, state, or local law or regulation.
+                    </li>
+                    <li>Attempt to gain unauthorized access to any part of the Services, other accounts, computer
+                        systems, or networks connected to the Services.</li>
+                    <li>Use any automated system, bot, scraper, or data mining tool to access the Services without our
+                        express written permission.</li>
+                    <li>Transmit any viruses, malware, or other malicious code through the Services.</li>
+                    <li>Harass, abuse, threaten, or harm other users of the Services.</li>
+                    <li>Reverse engineer, decompile, or disassemble any game or software provided by Moonlit Games.</li>
+                    <li>Exploit bugs, glitches, or cheats in any Moonlit Games title for unfair advantage.</li>
+                </ul>
+
+                <h3>3.3 Account Responsibility</h3>
+                <p>If you create an account with any Moonlit Games service, you are responsible for maintaining the
+                    confidentiality of your account credentials and for restricting access to your account. You accept
+                    responsibility for all activities that occur under your account.</p>
+
+                <h2>4. Intellectual Property</h2>
+                <h3>4.1 Ownership</h3>
+                <p>All content, games, software, graphics, logos, trademarks, and other intellectual property associated
+                    with the Services are owned by or licensed to Moonlit Games. This includes, without limitation, the
+                    "Moonlit Games" name and logo, "Chill Gorilla," "Moonlit APIs," and all related branding.</p>
+
+                <h3>4.2 Limited License</h3>
+                <p>We grant you a limited, non-exclusive, non-transferable, revocable license to access and use the
+                    Services for personal, non-commercial purposes, subject to these Terms.</p>
+
+                <h3>4.3 User Content</h3>
+                <p>Any content you submit, upload, or transmit through the Services remains your property. However, by
+                    submitting content, you grant Moonlit Games a worldwide, royalty-free, non-exclusive license to use,
+                    reproduce, modify, and display such content in connection with the Services.</p>
+
+                <h2>5. Moonlit APIs</h2>
+                <h3>5.1 API Access</h3>
+                <p>Access to Moonlit APIs may be subject to additional terms, rate limits, and usage guidelines that
+                    will be provided when the API portal launches. API access may be granted or revoked at our sole
+                    discretion.</p>
+
+                <h3>5.2 API Usage Restrictions</h3>
+                <p>When using Moonlit APIs, you agree to:</p>
+                <ul>
+                    <li>Comply with all rate limits and usage guidelines.</li>
+                    <li>Not use the APIs to create competing products or services.</li>
+                    <li>Not redistribute API access or credentials to third parties.</li>
+                    <li>Not use the APIs for any unlawful or harmful purpose.</li>
+                    <li>Display proper attribution when using data from Moonlit APIs.</li>
+                </ul>
+
+                <h2>6. Games & Virtual Content</h2>
+                <h3>6.1 Game License</h3>
+                <p>Purchases of Moonlit Games titles grant you a license to use the game software. You do not own the
+                    game itself; you own a license to play it subject to these Terms.</p>
+
+                <h3>6.2 Virtual Items</h3>
+                <p>Any virtual items, currency, or in-game content acquired through our games are licensed to you and
+                    are not your property. We reserve the right to manage, modify, or remove virtual content at any
+                    time.</p>
+
+                <h3>6.3 VR Safety</h3>
+                <p>Our VR titles, including Chill Gorilla, involve immersive virtual reality experiences. You
+                    acknowledge that VR experiences may cause motion sickness, disorientation, or discomfort. You use VR
+                    products at your own risk and should take regular breaks during gameplay.</p>
+
+                <h2>7. Privacy</h2>
+                <p>Your use of the Services is also governed by our Privacy Policy. By using the Services, you consent
+                    to the collection and use of information as described in our Privacy Policy. We are committed to
+                    protecting your personal information and will not sell your data to third parties.</p>
+
+                <h2>8. Disclaimers</h2>
+                <h3>8.1 "As Is" Basis</h3>
+                <p>The Services are provided on an "AS IS" and "AS AVAILABLE" basis. Moonlit Games makes no warranties,
+                    expressed or implied, regarding the Services, including but not limited to warranties of
+                    merchantability, fitness for a particular purpose, or non-infringement.</p>
+
+                <h3>8.2 No Guarantee of Availability</h3>
+                <p>We do not guarantee that the Services will be available at all times. We may modify, suspend, or
+                    discontinue any part of the Services at any time without notice.</p>
+
+                <h2>9. Limitation of Liability</h2>
+                <p>To the fullest extent permitted by law, Moonlit Games shall not be liable for any indirect,
+                    incidental, special, consequential, or punitive damages arising from your use of or inability to use
+                    the Services, including but not limited to loss of data, revenue, or profits.</p>
+
+                <h2>10. Indemnification</h2>
+                <p>You agree to indemnify, defend, and hold harmless Moonlit Games and its team members (including but
+                    not limited to Indigo577/Liam Milby, 10StarGeneral, Star, Ethan Parker, and Ben Robinson) from any
+                    claims, damages, losses, or expenses arising from your use of the Services or violation of these
+                    Terms.</p>
+
+                <h2>11. Termination</h2>
+                <p>We may terminate or suspend your access to the Services immediately, without prior notice, for any
+                    reason, including if you breach these Terms. Upon termination, your right to use the Services will
+                    cease immediately.</p>
+
+                <h2>12. Changes to Terms</h2>
+                <p>We reserve the right to modify these Terms at any time. Changes will be effective immediately upon
+                    posting to this page. Your continued use of the Services after changes are posted constitutes your
+                    acceptance of the revised Terms. We encourage you to review this page periodically.</p>
+
+                <h2>13. Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the Commonwealth of
+                    Virginia, United States, without regard to its conflict of law provisions. Any disputes arising
+                    under these Terms shall be resolved in the courts located in Richmond, Virginia.</p>
+
+                <h2>14. Contact</h2>
+                <p>If you have any questions about these Terms, please contact us:</p>
+                <ul>
+                    <li>Email: <a href="mailto:info@moonlitgames.io">info@moonlitgames.io</a></li>
+                    <li>Location: Richmond, Virginia, United States</li>
+                    <li>Discord: <a href="https://discord.gg/H8NHZ4sEAa" target="_blank"
+                            rel="noopener">discord.gg/H8NHZ4sEAa</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top:none;padding-top:0;">
+                <p>&copy; 2025 Moonlit Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
