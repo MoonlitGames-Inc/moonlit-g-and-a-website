@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlit APIs - Developer Tools by Moonlit Games</title>
+    <meta name="description"
+        content="Moonlit APIs - Powerful developer tools and API integrations for the Moonlit Games ecosystem. Coming Soon.">
+    <link rel="icon" type="image/png" href="../Moonlit Games logo design.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mapi.css">
+</head>
+
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/moonlit-apis-logo.png" alt="Moonlit APIs" class="logo-img">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link">Moonlit Games</a>
+                <a href="#overview" class="nav-link active">Overview</a>
+                <a href="#integration" class="nav-link">Integration</a>
+                <a href="#team" class="nav-link">Team</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner" id="overview">
+        <div class="banner-bg">
+            <img src="../assets/moonlit-apis-banner.png" alt="" class="banner-bg-img">
+            <div class="banner-overlay"></div>
+            <div class="banner-grid"></div>
+            <div class="banner-glow glow-1"></div>
+            <div class="banner-glow glow-2"></div>
+            <div class="banner-glow glow-3"></div>
+            <!-- Floating code elements -->
+            <div class="floating-code code-1">GET /api/v1/games</div>
+            <div class="floating-code code-2">POST /api/v1/players</div>
+            <div class="floating-code code-3">ws://api.moonlit.io</div>
+            <div class="floating-code code-4">200 OK</div>
+            <div class="floating-code code-5">Authorization: Bearer</div>
+        </div>
+        <div class="banner-content">
+            <div class="banner-logo-wrap">
+                <img src="../assets/moonlit-apis-logo.png" alt="Moonlit APIs" class="banner-logo">
+            </div>
+            <div class="banner-badge">Developer Platform</div>
+            <h1 class="banner-title">
+                Moonlit <span class="gradient-text">APIs</span>
+            </h1>
+            <p class="banner-subtitle">
+                Powerful developer tools and API integrations for the Moonlit Games ecosystem.
+                Access game data, build integrations, and extend the platform.
+            </p>
+            <div class="banner-status">
+                <div class="status-dot"></div>
+                <span>Portal Coming Soon</span>
+            </div>
+        </div>
+        <div class="banner-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path
+                    d="M0 60L48 55C96 50 192 40 288 45C384 50 480 70 576 75C672 80 768 70 864 60C960 50 1056 40 1152 45C1248 50 1344 70 1392 80L1440 90V120H0Z"
+                    fill="#06080f" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- API Overview Cards -->
+    <section class="section api-overview-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We're Building</span>
+                <h2 class="section-title">API Services</h2>
+                <p class="section-desc">A suite of developer tools designed to work seamlessly with the Moonlit Games
+                    platform.</p>
+            </div>
+            <div class="api-cards-grid">
+                <div class="api-overview-card" data-aos>
+                    <div class="aoc-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <h3>REST API</h3>
+                    <p>Clean, well-documented RESTful endpoints for accessing game data, player stats, leaderboards, and
+                        more.</p>
+                    <div class="code-preview">
+                        <code>GET /api/v1/games/chill-gorilla</code>
+                    </div>
+                    <span class="api-status-badge in-dev">In Development</span>
+                </div>
+                <div class="api-overview-card" data-aos>
+                    <div class="aoc-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                        </svg>
+                    </div>
+                    <h3>WebSocket</h3>
+                    <p>Real-time event streams for live game data, notifications, match updates, and interactive
+                        integrations.</p>
+                    <div class="code-preview">
+                        <code>ws://api.moonlit.io/v1/stream</code>
+                    </div>
+                    <span class="api-status-badge planned">Planned</span>
+                </div>
+                <div class="api-overview-card" data-aos>
+                    <div class="aoc-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <h3>SDK & Libraries</h3>
+                    <p>Official libraries for JavaScript, Python, and C# to integrate Moonlit services into your
+                        projects.</p>
+                    <div class="code-preview">
+                        <code>npm install @moonlit/sdk</code>
+                    </div>
+                    <span class="api-status-badge planned">Planned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration with Moonlit Games -->
+    <section class="section integration-section" id="integration">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ecosystem</span>
+                <h2 class="section-title">Integration with Moonlit Games</h2>
+                <p class="section-desc">Moonlit APIs is the backbone connecting developers to the Moonlit Games
+                    ecosystem.</p>
+            </div>
+
+            <div class="integration-flow">
+                <div class="flow-card" data-aos>
+                    <div class="flow-number">01</div>
+                    <h3>Game Data Pipeline</h3>
+                    <p>Moonlit APIs acts as the data layer between Moonlit Games titles and third-party applications.
+                        Access real-time game state, player progress, and in-game events from titles like Chill Gorilla.
+                    </p>
+                </div>
+                <div class="flow-connector">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="flow-card" data-aos>
+                    <div class="flow-number">02</div>
+                    <h3>Authentication & Accounts</h3>
+                    <p>Unified player identity across all Moonlit titles. Single sign-on, profile management, and
+                        cross-game progression data powered by the APIs layer.</p>
+                </div>
+                <div class="flow-connector">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="flow-card" data-aos>
+                    <div class="flow-number">03</div>
+                    <h3>Community & Content Tools</h3>
+                    <p>Build community tools, stat trackers, leaderboards, and content platforms using our open API
+                        endpoints. Everything connects back to the Moonlit Games ecosystem.</p>
+                </div>
+            </div>
+
+            <div class="architecture-diagram">
+                <div class="arch-layer games-layer">
+                    <img src="../Moonlit Games logo design.png" alt="Moonlit Games" class="arch-logo">
+                    <span>Moonlit Games</span>
+                    <small>Chill Gorilla & Future Titles</small>
+                </div>
+                <div class="arch-arrow">
+                    <svg width="24" height="60" viewBox="0 0 24 60">
+                        <path d="M12 0v50M5 43l7 7 7-7" stroke="currentColor" stroke-width="1.5" fill="none" />
+                    </svg>
+                </div>
+                <div class="arch-layer api-layer">
+                    <img src="../assets/moonlit-apis-logo.png" alt="Moonlit APIs" class="arch-logo">
+                    <span>Moonlit APIs</span>
+                    <small>REST, WebSocket, SDK</small>
+                </div>
+                <div class="arch-arrow">
+                    <svg width="24" height="60" viewBox="0 0 24 60">
+                        <path d="M12 0v50M5 43l7 7 7-7" stroke="currentColor" stroke-width="1.5" fill="none" />
+                    </svg>
+                </div>
+                <div class="arch-layer dev-layer">
+                    <div class="dev-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <span>Your Application</span>
+                    <small>Community Tools, Bots, Dashboards</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">API Team</span>
+                <h2 class="section-title">The People Behind the APIs</h2>
+                <p class="section-desc">Meet the developers building the Moonlit APIs platform.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card" data-aos>
+                    <div class="team-avatar">
+                        <div class="avatar-circle ep-badge">EP</div>
+                    </div>
+                    <h4>Ethan Parker</h4>
+                    <span class="team-role">API Developer</span>
+                    <p>Designs and builds the core API infrastructure, endpoint architecture, and developer
+                        documentation for the Moonlit platform.</p>
+                </div>
+                <div class="team-card" data-aos>
+                    <div class="team-avatar">
+                        <div class="avatar-circle br-badge">BR</div>
+                    </div>
+                    <h4>Ben Robinson</h4>
+                    <span class="team-role">API Developer</span>
+                    <p>Focuses on real-time systems, WebSocket integrations, and SDK development to power seamless
+                        developer experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Footer -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Ready to Build?</h2>
+                <p>The Moonlit APIs portal is coming soon. Join the community to get early access and stay up to date.
+                </p>
+                <div class="cta-actions">
+                    <a href="https://discord.gg/H8NHZ4sEAa" target="_blank" rel="noopener" class="btn btn-primary">
+                        <span>Join Discord</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="../index.html" class="btn btn-outline">Back to Moonlit Games</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <p>&copy; 2025 Moonlit Games. All rights reserved. Moonlit APIs is a division of Moonlit Games.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
